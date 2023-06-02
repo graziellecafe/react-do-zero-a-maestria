@@ -27,8 +27,8 @@ Há algumas coisas que você deve saber com antecedência antes de começar a br
 
 ### O que é React?
 
-- React é uma biblioteca Javascript para desenvolvimento de aplicações front-end
-- Estas aplicações são chamadas de SPA (Single Page Application)
+- React **é uma biblioteca** Javascript para desenvolvimento de aplicações front-end
+- Estas aplicações são chamadas de SPA (Single Page Application): um único carregamento
 - A arquitetura do React é baseada em componentes
 - Pode ser inserido em uma aplicação ou podemos criar a aplicação apenas com React
 - É mantido pelo Meta (Facebook)
@@ -64,6 +64,14 @@ Para fazer o deploy do seu projeto você pode dar uma olhada nesse passo a passo
 - Para criar as nossas aplicações em React vamos utilizar um executor de scripts do Node que é o **npx**
 - Com o comando: `npx create-react-app <nome>` temos uma nova aplicação sendo gerada
 - Podemos iniciar a aplicação com `npm start`
+- Podemos usar o vite: `npm create vite@latest`
+  - coloca o nome do projeto que quer 
+  - seleciona o framework 
+  - seleciona com js ou js + ts 
+  - muda para a pasta que foi criada 
+  - `cd hello-word`
+  - `npm install`
+  - `npm run dev`
 
 ### Estrutura base do React
 
