@@ -1,5 +1,7 @@
 // Fundamentos 
 
+import MyComponents from "./MyComponents";
+
 const FirstComponent = () => { 
 //essa função chama o componnete 'meu primeiro componente '
     return (
@@ -8,6 +10,7 @@ const FirstComponent = () => {
             <h1>
                 Meu primeiro componente
             </h1>
+            <MyComponents/>
         </div>
     );
 };
