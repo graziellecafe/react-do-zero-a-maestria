@@ -139,5 +139,4 @@ Há algumas pastas e arquivos chaves para o desenvolvimento em React:
                 
     };
 ```
-
-
+## Seção 3: Avançando em React 
