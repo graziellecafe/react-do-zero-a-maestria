@@ -115,7 +115,7 @@ Há algumas pastas e arquivos chaves para o desenvolvimento em React:
 #### Evento de click
 
 - Os eventos para o front-end são essenciais
-- Em várias situações vamos precisar do click, como ao enviar formulários
+- Em várias situações vamos precisar do click, **como ao enviar formulários**
 - No React os eventos estão "prontos", como podemos utilizar o `OnClick`para ativar uma função ao clicar em um elemento
 - Esta função é criada na própria função do componente
 - As funções geralmente tem o padrão `handleAlgumaCoisa`
@@ -125,3 +125,19 @@ Há algumas pastas e arquivos chaves para o desenvolvimento em React:
 - Podemos criar funções que retornam JSX
 - Isso serve para criar situações que dependam de outras condições
 - Ou seja, o JSX a ser renderizado pode variar por alguma variável, por exemplo
+
+### Funções no evento 
+- Quando as funções são simples, podemos realizar a lógica no próprio evento
+- Isso torna nosso código mais complicado, por atrelar lógica com HTML 
+- Mas em algumas situações é aplicáivel 
+
+```js
+    const renderSomething = (x) => {
+        if(x) {
+            return <h1>Renderizando isso! </h1>
+        } else return <h1>Também posso renderizar isso! </h1>
+                
+    };
+```
+
+
