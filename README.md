@@ -150,3 +150,58 @@ Há algumas pastas e arquivos chaves para o desenvolvimento em React:
 - Mas um padrão bem utilizado para as imagens dos projetos é colocar emm uma pasta chamada assets, em src. 
 - Ou seja, você vai encontrar projetos com as duas abordagens 
 - Em assets precisamos importar as imagens e o src é dinâmico com o nome da importação. 
+
+### O que são hooks 
+- Recursos do React que tem diversas funções 
+- Como: guardar e alterar o estado de algum dado da nossa aplicação 
+- Todos os hooks começam com **use**, por exemplo **useState**
+- Podemos criar os nossos hooks, isto é, chamado de custom hoook 
+- Os hooks precisam ser importador 
+- Geralmente são úteis em todas as aplicações, utilizaremos diversos ao longo  do curso 
+
+### useState hook 
+- O hook useState é um dos mais utilizados 
+- Utilizamos para **gerenciar o estado de algum dado**, variáveis não funcionam corretamente, o componente não re-rederiza 
+- Para **guardar o dado definimos o nome da variável** e para **alterar vamos utilizar setNome**, onde nome é o nome do nosso dado 
+
+### Renderização de lista 
+- Uma outra ação bem comum é renderizar os dados no template 
+- Fazemos isso com os dados com tipo de array 
+- Utilizando o método map para nos auxiliar 
+- Além dos dados podemos inserir JSX em cada iteração 
+
+### A propriedade key 
+- Iterar listas sem a propriedade key nos gera um warning, podemos verificar isso no console 
+- O React precisa de uma chave única em cada um dos itens iterados
+- Isso serve para ajudá-lo na renderização do componente 
+- Geralmente temos um array de objetos e podemos colocar key como alguma chave única, como o id de algum dado 
+
+```js 
+const ListRender = () => {
+    const [users] = useState([
+        { id: 1, name: "Grazielle", age: 29},
+        { id: 2, name: "Ramon", age: 28},
+        { id: 3, name: "José", age: 62},
+    ]);
+}
+
+   return(
+        <div>
+            <ul>
+                {users.map((user) => (
+                    <li key={user.id}>
+                        {user.name} - {user.age}
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+
+export default ListRender; 
+```
+
+### Previous state
+- Previous state é um recurso que nos permite pegar o dado em seu valor original dentro de um set de dado 
+- Isso é muito utilizado para modificar listas, pois temos o valor antigo e transformamos em um valor novo
+- O primeiro argumento de um set sempre será o previous state
