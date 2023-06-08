@@ -1,5 +1,7 @@
 import './App.css';
 import Mandala from "./assets/imagem-2.png"
+import ListRender from './components/ListRender';
+import ManageData from './components/ManageData';
 
 function App() {
   return (
@@ -10,10 +12,13 @@ function App() {
       <h1>
         <img src="/imagem-1.png" alt="paisagem" />
       </h1>
-
-  {/* Imagem em assets */}
-    <img src={Mandala} alt="mandala" />
+    {/* Imagem em assets */}
+      <img src={Mandala} alt="mandala" />
+      <ManageData/> 
+      <ListRender/>
     </div>
+
+
     </>
   );
 }
